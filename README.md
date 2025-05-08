@@ -50,6 +50,25 @@ llm-customer-service-agent/
 
 ### Installation
 
+#### Quick Installation (Recommended)
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/llm-customer-service-agent.git
+   cd llm-customer-service-agent
+   ```
+
+2. Run the installation script:
+   - On Windows: Double-click `install.bat` or run it from the command line
+   - On macOS/Linux: Run `bash install.sh` in the terminal
+
+The installation script will:
+- Install all required packages
+- Add the project to your Python path
+- Verify the installation
+
+#### Manual Installation
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/llm-customer-service-agent.git
@@ -67,9 +86,20 @@ llm-customer-service-agent/
    pip install -r requirements.txt
    ```
 
-4. Set up environment variables:
+4. Add the project to your Python path:
+   ```bash
+   # On Windows
+   set PYTHONPATH=%PYTHONPATH%;%CD%
+
+   # On macOS/Linux
+   export PYTHONPATH=$PYTHONPATH:$(pwd)
+   ```
+
+5. Set up environment variables:
    - Copy `.env.example` to `.env`
    - Fill in your API keys and configuration values
+
+For detailed installation instructions, troubleshooting, and alternative methods, see [README_INSTALLATION.md](README_INSTALLATION.md).
 
 ### Running the Application
 
